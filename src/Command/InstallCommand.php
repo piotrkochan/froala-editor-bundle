@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Command;
+namespace Kochan\FroalaEditorBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

@@ -4,10 +4,10 @@
     bootstrap="tests/bootstrap.php"
 >
     <php>
-        <env name="KERNEL_CLASS" value="Leapt\FroalaEditorBundle\Tests\LeaptFroalaEditorTestingKernel" />
+        <env name="KERNEL_CLASS" value="Kochan\FroalaEditorBundle\Tests\KochanFroalaEditorTestingKernel" />
     </php>
     <testsuites>
-        <testsuite name="LeaptFroalaEditorBundle Test Suite">
+        <testsuite name="KochanFroalaEditorBundle Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

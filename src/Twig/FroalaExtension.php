@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Twig;
+namespace Kochan\FroalaEditorBundle\Twig;
 
-use Leapt\FroalaEditorBundle\DependencyInjection\Configuration;
+use Kochan\FroalaEditorBundle\DependencyInjection\Configuration;
 use Symfony\Component\Asset\Packages;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Twig\Extension\AbstractExtension;
@@ -12,8 +12,13 @@ use Twig\TwigFunction;
 
 final class FroalaExtension extends AbstractExtension
 {
-    public function __construct(private ParameterBagInterface $parameterBag, private Packages $packages)
+    private ParameterBagInterface $parameterBag;
+    private Packages $packages;
+
+    public function __construct(ParameterBagInterface $parameterBag, Packages $packages)
     {
+        $this->parameterBag = $parameterBag;
+        $this->packages = $packages;
     }
 
     public function getFunctions(): array

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Utility;
+namespace Kochan\FroalaEditorBundle\Utility;
 
 use Symfony\Component\Config\Definition\Builder\NodeBuilder;
 
@@ -142,7 +142,7 @@ final class UConfiguration
         'entities'                      => null,
         'fileUploadMethod'              => null,
         'fileUploadParam'               => null,
-        'fileUploadURL'                 => 'leapt_froala_editor_upload_file',
+        'fileUploadURL'                 => 'Kochan_froala_editor_upload_file',
         'filesManagerUploadURL'         => null,
         'fontAwesomeTemplate'           => null,
         'fontFamilyDefaultSelection'    => null,
@@ -155,13 +155,13 @@ final class UConfiguration
         'imageDefaultAlign'             => null,
         'imageDefaultDisplay'           => null,
         'imageManagerDeleteMethod'      => null,
-        'imageManagerDeleteURL'         => 'leapt_froala_editor_delete_image',
+        'imageManagerDeleteURL'         => 'Kochan_froala_editor_delete_image',
         'imageManagerLoadMethod'        => null,
-        'imageManagerLoadURL'           => 'leapt_froala_editor_load_images',
+        'imageManagerLoadURL'           => 'Kochan_froala_editor_load_images',
         'imageManagerPreloader'         => null,
         'imageUploadMethod'             => null,
         'imageUploadParam'              => null,
-        'imageUploadURL'                => 'leapt_froala_editor_upload_image',
+        'imageUploadURL'                => 'Kochan_froala_editor_upload_image',
         'language'                      => null,
         'linkAutoPrefix'                => null,
         'placeholderText'               => null,
@@ -177,13 +177,13 @@ final class UConfiguration
         'videoDefaultDisplay'           => null,
         'videoUploadMethod'             => null,
         'videoUploadParam'              => null,
-        'videoUploadURL'                => 'leapt_froala_editor_upload_video',
+        'videoUploadURL'                => 'Kochan_froala_editor_upload_video',
         'width'                         => null,
     ];
 
     public const OPTIONS_STRING_CUSTOM = [
         'customJS'          => null,
-        'basePath'          => '/bundles/leaptfroalaeditor/froala_editor',
+        'basePath'          => '/bundles/Kochanfroalaeditor/froala_editor',
         'imageUploadFolder' => '/upload',
         'imageUploadPath'   => null,
         'fileUploadFolder'  => '/upload',

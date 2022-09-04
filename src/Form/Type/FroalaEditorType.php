@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Form\Type;
+namespace Kochan\FroalaEditorBundle\Form\Type;
 
-use Leapt\FroalaEditorBundle\DependencyInjection\Configuration;
-use Leapt\FroalaEditorBundle\Service\OptionManager;
-use Leapt\FroalaEditorBundle\Service\PluginProvider;
-use Leapt\FroalaEditorBundle\Utility\UConfiguration;
+use Kochan\FroalaEditorBundle\DependencyInjection\Configuration;
+use Kochan\FroalaEditorBundle\Service\OptionManager;
+use Kochan\FroalaEditorBundle\Service\PluginProvider;
+use Kochan\FroalaEditorBundle\Utility\UConfiguration;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -18,11 +18,18 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class FroalaEditorType extends AbstractType
 {
+    private ParameterBagInterface $parameterBag;
+    private OptionManager $optionManager;
+    private PluginProvider $pluginProvider;
+
     public function __construct(
-        private ParameterBagInterface $parameterBag,
-        private OptionManager $optionManager,
-        private PluginProvider $pluginProvider,
+        ParameterBagInterface $parameterBag,
+        OptionManager $optionManager,
+        PluginProvider $pluginProvider
     ) {
+        $this->parameterBag = $parameterBag;
+        $this->optionManager = $optionManager;
+        $this->pluginProvider = $pluginProvider;
     }
 
     public function buildForm(FormBuilderInterface $builder, array $options): void

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\DependencyInjection;
+namespace Kochan\FroalaEditorBundle\DependencyInjection;
 
-use Leapt\FroalaEditorBundle\Utility\UConfiguration;
+use Kochan\FroalaEditorBundle\Utility\UConfiguration;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class LeaptFroalaEditorExtension extends Extension
+class KochanFroalaEditorExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {

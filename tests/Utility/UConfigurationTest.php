@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Tests\Utility;
+namespace Kochan\FroalaEditorBundle\Tests\Utility;
 
-use Leapt\FroalaEditorBundle\Utility\UConfiguration;
+use Kochan\FroalaEditorBundle\Utility\UConfiguration;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\HttpClient\HttpClient;

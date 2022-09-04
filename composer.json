@@ -1,5 +1,5 @@
 {
-    "name": "leapt/froala-editor-bundle",
+    "name": "piotrkochan/froala-editor-bundle",
     "type": "symfony-bundle",
     "description": "Provides a Froala editor integration for Symfony 5 & 6.",
     "keywords": [ "froala", "editor", "wysiwyg" ],
@@ -16,10 +16,14 @@
         {
             "name": "Jonathan Scheiber",
             "homepage": "https://github.com/jmsche"
+        },
+        {
+            "name": "Piotr Kochan",
+            "homepage": "https://github.com/piotrkochan"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4",
         "ext-zip": "*",
         "symfony/asset": "^5.4 || ^6.0",
         "symfony/console": "^5.4 || ^6.0",
@@ -51,12 +55,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Leapt\\FroalaEditorBundle\\": "src/"
+            "Kochan\\FroalaEditorBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Leapt\\FroalaEditorBundle\\Tests\\": "tests/"
+            "Kochan\\FroalaEditorBundle\\Tests\\": "tests/"
         }
     }
 }

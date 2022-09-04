@@ -1,6 +1,6 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Method Leapt\\\\FroalaEditorBundle\\\\Tests\\\\LeaptFroalaEditorTestingKernel\\:\\:configureContainer\\(\\) is unused\\.$#"
+			message: "#^Method Kochan\\\\FroalaEditorBundle\\\\Tests\\\\KochanFroalaEditorTestingKernel\\:\\:configureContainer\\(\\) is unused\\.$#"
 			count: 1
-			path: tests/LeaptFroalaEditorTestingKernel.php
+			path: tests/KochanFroalaEditorTestingKernel.php

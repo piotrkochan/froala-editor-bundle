@@ -2,14 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Service;
+namespace Kochan\FroalaEditorBundle\Service;
 
 use Symfony\Component\Routing\RouterInterface;
 
 final class OptionManager
 {
-    public function __construct(private RouterInterface $router)
+    private RouterInterface $router;
+
+    public function __construct(RouterInterface $router)
     {
+        $this->router = $router;
     }
 
     /**

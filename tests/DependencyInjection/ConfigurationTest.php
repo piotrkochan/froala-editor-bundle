@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Tests\DependencyInjection;
+namespace Kochan\FroalaEditorBundle\Tests\DependencyInjection;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
@@ -12,6 +12,6 @@ final class ConfigurationTest extends KernelTestCase
     {
         // Make sure default config loads without issues
         self::bootKernel();
-        self::assertSame([], self::getContainer()->getParameter('leapt_froala_editor.profiles'));
+        self::assertSame([], self::getContainer()->getParameter('Kochan_froala_editor.profiles'));
     }
 }

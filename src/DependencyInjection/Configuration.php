@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\DependencyInjection;
+namespace Kochan\FroalaEditorBundle\DependencyInjection;
 
-use Leapt\FroalaEditorBundle\Utility\UConfiguration;
+use Kochan\FroalaEditorBundle\Utility\UConfiguration;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\NodeBuilder;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -12,7 +12,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    public const NODE_ROOT = 'leapt_froala_editor';
+    public const NODE_ROOT = 'Kochan_froala_editor';
 
     public function getConfigTreeBuilder(): TreeBuilder
     {

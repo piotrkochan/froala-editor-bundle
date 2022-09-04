@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Service;
+namespace Kochan\FroalaEditorBundle\Service;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\File\UploadedFile;

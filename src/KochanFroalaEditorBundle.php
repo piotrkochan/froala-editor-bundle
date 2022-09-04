@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle;
+namespace Kochan\FroalaEditorBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class LeaptFroalaEditorBundle extends Bundle
+class KochanFroalaEditorBundle extends Bundle
 {
 }

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Tests\Form\Type;
+namespace Kochan\FroalaEditorBundle\Tests\Form\Type;
 
-use Leapt\FroalaEditorBundle\DependencyInjection\Configuration;
-use Leapt\FroalaEditorBundle\Form\Type\FroalaEditorType;
-use Leapt\FroalaEditorBundle\Service\OptionManager;
-use Leapt\FroalaEditorBundle\Service\PluginProvider;
-use Leapt\FroalaEditorBundle\Utility\UConfiguration;
+use Kochan\FroalaEditorBundle\DependencyInjection\Configuration;
+use Kochan\FroalaEditorBundle\Form\Type\FroalaEditorType;
+use Kochan\FroalaEditorBundle\Service\OptionManager;
+use Kochan\FroalaEditorBundle\Service\PluginProvider;
+use Kochan\FroalaEditorBundle\Utility\UConfiguration;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\Form\FormInterface;

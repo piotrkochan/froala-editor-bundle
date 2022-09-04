@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Leapt\FroalaEditorBundle\Tests\Service;
+namespace Kochan\FroalaEditorBundle\Tests\Service;
 
-use Leapt\FroalaEditorBundle\Service\PluginProvider;
+use Kochan\FroalaEditorBundle\Service\PluginProvider;
 use PHPUnit\Framework\TestCase;
 
 final class PluginProviderTest extends TestCase

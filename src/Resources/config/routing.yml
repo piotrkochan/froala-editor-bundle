@@ -1,22 +1,22 @@
 # Image upload
-leapt_froala_editor_upload_image:
+Kochan_froala_editor_upload_image:
     path: /upload_image
-    controller: Leapt\FroalaEditorBundle\Controller\MediaController::uploadImage
+    controller: Kochan\FroalaEditorBundle\Controller\MediaController::uploadImage
 
-leapt_froala_editor_delete_image:
+Kochan_froala_editor_delete_image:
     path: /delete_image
-    controller: Leapt\FroalaEditorBundle\Controller\MediaController::deleteImage
+    controller: Kochan\FroalaEditorBundle\Controller\MediaController::deleteImage
 
-leapt_froala_editor_load_images:
+Kochan_froala_editor_load_images:
     path: /load_images
-    controller: Leapt\FroalaEditorBundle\Controller\MediaController::loadImages
+    controller: Kochan\FroalaEditorBundle\Controller\MediaController::loadImages
 
 # File upload
-leapt_froala_editor_upload_file:
+Kochan_froala_editor_upload_file:
     path: /upload_file
-    controller: Leapt\FroalaEditorBundle\Controller\MediaController::uploadFile
+    controller: Kochan\FroalaEditorBundle\Controller\MediaController::uploadFile
 
 # Video upload
-leapt_froala_editor_upload_video:
+Kochan_froala_editor_upload_video:
     path: /upload_video
-    controller: Leapt\FroalaEditorBundle\Controller\MediaController::uploadVideo
+    controller: Kochan\FroalaEditorBundle\Controller\MediaController::uploadVideo
