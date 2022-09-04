@@ -12,7 +12,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    public const NODE_ROOT = 'Kochan_froala_editor';
+    public const NODE_ROOT = 'kochan_froala_editor';
 
     public function getConfigTreeBuilder(): TreeBuilder
     {

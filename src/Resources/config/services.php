@@ -20,32 +20,32 @@ return static function (ContainerConfigurator $container): void {
 
         // Controllers
         ->set(MediaController::class)
-            ->arg('$mediaManager', service('Kochan_froala_editor.media_manager'))
+            ->arg('$mediaManager', service('kochan_froala_editor.media_manager'))
             ->arg('$kernel', service('kernel'))
             ->public()
 
         // Form types
-        ->set('Kochan_froala_editor.form.type')
+        ->set('kochan_froala_editor.form.type')
             ->class(FroalaEditorType::class)
             ->arg('$parameterBag', service('parameter_bag'))
-            ->arg('$optionManager', service('Kochan_froala_editor.option_manager'))
-            ->arg('$pluginProvider', service('Kochan_froala_editor.plugin_provider'))
+            ->arg('$optionManager', service('kochan_froala_editor.option_manager'))
+            ->arg('$pluginProvider', service('kochan_froala_editor.plugin_provider'))
             ->tag('form.type')
 
         // Managers/providers
-        ->set('Kochan_froala_editor.option_manager')
+        ->set('kochan_froala_editor.option_manager')
             ->class(OptionManager::class)
             ->arg('$router', service('router'))
 
-        ->set('Kochan_froala_editor.plugin_provider')
+        ->set('kochan_froala_editor.plugin_provider')
             ->class(PluginProvider::class)
 
-        ->set('Kochan_froala_editor.media_manager')
+        ->set('kochan_froala_editor.media_manager')
             ->class(MediaManager::class)
             ->public()
 
         // Twig extensions
-        ->set('Kochan_froala_editor.froala_extension')
+        ->set('kochan_froala_editor.froala_extension')
             ->class(FroalaExtension::class)
             ->arg('$parameterBag', service('parameter_bag'))
             ->arg('$packages', service('assets.packages'))

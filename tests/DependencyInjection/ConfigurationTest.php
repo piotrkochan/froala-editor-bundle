@@ -12,6 +12,6 @@ final class ConfigurationTest extends KernelTestCase
     {
         // Make sure default config loads without issues
         self::bootKernel();
-        self::assertSame([], self::getContainer()->getParameter('Kochan_froala_editor.profiles'));
+        self::assertSame([], self::getContainer()->getParameter('kochan_froala_editor.profiles'));
     }
 }

@@ -78,7 +78,7 @@ return [
 
 ```yaml
 # config/routes.yaml 
-Kochan_froala_editor:
+kochan_froala_editor:
     resource: '@KochanFroalaEditorBundle/Resources/config/routing.php'
     prefix:   /froalaeditor
 ```
@@ -99,8 +99,8 @@ twig:
 First, you have to select your language, other settings are optional (see below).
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml 
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml 
+kochan_froala_editor:
     language: 'nl'
 ```
 
@@ -117,8 +117,8 @@ Note that some options need some plugins (all information provided in the [Froal
 Example for each option type below:
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     toolbarInline: true
     tableColors: [ '#FFFFFF', '#FF0000' ]
     saveParams: { "id" : "myEditorField" }
@@ -127,8 +127,8 @@ Kochan_froala_editor:
 To provide a better integration with Symfony, some custom options are added, see the full list below: 
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # Froala licence number if you want to use a purchased licence.
     serialNumber: 'XXXX-XXXX-XXXX'
 
@@ -148,7 +148,7 @@ Kochan_froala_editor:
 
     # Change the froala base path.
     # Useful eg. when you load it from your own public directory.
-    # Defaults to "/bundles/Kochanfroalaeditor/froala_editor"
+    # Defaults to "/bundles/kochanfroalaeditor/froala_editor"
     basePath: '/my/custom/path'
 
     # Custom JS file.
@@ -234,8 +234,8 @@ You can define several configuration profiles that will be reused in your forms,
 When using a profile, the root configuration options will be used & overridden:
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     heightMax: 400
     attribution: false
     profiles:
@@ -263,16 +263,16 @@ In this example, `profile_1` profile will have these configuration options set:
 All [Froala plugins](https://www.froala.com/wysiwyg-editor/docs/plugins) are enabled, but if you don't need one of them, you can disable some plugins...
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # Disable some plugins.
     pluginsDisabled: [ 'save', 'fullscreen' ]
 ```
 ... or chose only plugins to enable:
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # Enable only some plugins.
     pluginsEnabled: [ 'image', 'file' ]
 ```
@@ -288,8 +288,8 @@ If you want to use your own uploader, you can override the configuration (if you
 To provide a better integration with Symfony, some custom options are added, see the full list below: 
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # The image upload folder in your /web directory.
     # Default: "/upload".
     imageUploadFolder: '/my/upload/folder'
@@ -309,8 +309,8 @@ If you want to use your own uploader, you can override the configuration (if you
 To provide a better integration with Symfony, some custom options are added, see the full list below: 
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # The file upload folder in your /web directory.
     # Default: "/upload".
     fileUploadFolder: '/my/upload/folder'
@@ -330,8 +330,8 @@ Kochan_froala_editor:
 The [Froala auto-save concept](https://www.froala.com/wysiwyg-editor/docs/concepts/save/autosave) to automatically request a save action on your server is working, just enter the correct options in your configuration file:
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     saveURL: 'my_save_route'
     saveInterval: 2500
     saveParam: "content"
@@ -340,8 +340,8 @@ Kochan_froala_editor:
 To provide a better integration with Symfony, some custom options are added, see the full list below: 
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     # Add some parameters to your save URL.
     # Usage: if you need parameters to generate your save action route (see save explaination below).
     # Default: null.
@@ -378,8 +378,8 @@ window.froalaDisplayError = froalaDisplayError;
 Now you can disable Froala bundle CSS/JS inclusion:
 
 ```yaml
-# config/packages/Kochan_froala_editor.yaml
-Kochan_froala_editor:
+# config/packages/kochan_froala_editor.yaml
+kochan_froala_editor:
     includeJS: false
     includeCSS: false
 ```

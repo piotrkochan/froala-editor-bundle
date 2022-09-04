@@ -7,20 +7,20 @@ use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return static function (RoutingConfigurator $routes): void {
     // Image upload
-    $routes->add('Kochan_froala_editor_upload_image', '/upload_image')
+    $routes->add('kochan_froala_editor_upload_image', '/upload_image')
         ->controller([MediaController::class, 'uploadImage']);
 
-    $routes->add('Kochan_froala_editor_delete_image', '/delete_image')
+    $routes->add('kochan_froala_editor_delete_image', '/delete_image')
         ->controller([MediaController::class, 'deleteImage']);
 
-    $routes->add('Kochan_froala_editor_load_images', '/load_images')
+    $routes->add('kochan_froala_editor_load_images', '/load_images')
         ->controller([MediaController::class, 'loadImages']);
 
     // File upload
-    $routes->add('Kochan_froala_editor_upload_file', '/upload_file')
+    $routes->add('kochan_froala_editor_upload_file', '/upload_file')
         ->controller([MediaController::class, 'uploadFile']);
 
     // Video upload
-    $routes->add('Kochan_froala_editor_upload_video', '/upload_video')
+    $routes->add('kochan_froala_editor_upload_video', '/upload_video')
         ->controller([MediaController::class, 'uploadVideo']);
 };
