@@ -8,6 +8,10 @@
 
 ## Introduction
 
+```
+This is a fork of "leapt/froala-editor-bundle", works with php 7.4+
+```
+
 This bundle aims to easily integrate & use the Froala editor in Symfony 5.4+/6.0+.
 
 This bundle is a maintained fork of the [KMSFroalaEditorBundle](https://github.com/froala/KMSFroalaEditorBundle).
